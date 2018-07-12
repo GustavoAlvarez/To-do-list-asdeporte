@@ -13,12 +13,7 @@ class HomeView: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var emptyView: UIView!
     
-    lazy var tasksModel = { () -> [Tasks] in
-        if (Tasks().getAllTasks().count == 0){
-            displayEmptyView()
-        }
-        return Tasks().getAllTasks()
-    }()
+    lazy var tasksModel:[Tasks] = [Tasks]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +27,29 @@ class HomeView: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        tasksModel = { () -> [Tasks] in
+            if (Tasks().getAllTasks().count == 0){
+                displayEmptyView()
+            }else{
+                hideEmptyView()
+            }
+            return Tasks().getAllTasks()
+        }()
+        
+        self.tableView.reloadData()
+    }
+    
     func displayEmptyView(){
         emptyView.isHidden = false
+    }
+    func hideEmptyView(){
+        emptyView.isHidden = true
+    }
+    
+    @IBAction func newTask(_ sender: UIButton) {
+        let vc:DetailsTableView = self.storyboard?.instantiateViewController(withIdentifier: "DetailsTableView") as! DetailsTableView
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
@@ -73,6 +89,9 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         //let detail = DetailPostViewController()
         //detail.getValue = self.postViewModel.postPressed(at: indexPath)
         //self.pushNavigation(detail)
+        let vc:DetailsTableView = self.storyboard?.instantiateViewController(withIdentifier: "DetailsTableView") as! DetailsTableView
+        vc.isEditingTask = true
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

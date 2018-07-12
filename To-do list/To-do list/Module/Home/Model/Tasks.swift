@@ -18,7 +18,7 @@ struct Tasks {
     
     func getAllTasks()-> [Tasks]{
         
-        var myTasks = [Tasks]()
+        /*var myTasks = [Tasks]()
         
         let task1 = Tasks(title: "Comer bien", details: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et.", subTasks: nil, created: Date(), isDone: false)
         myTasks.append(task1)
@@ -27,9 +27,10 @@ struct Tasks {
         myTasks.append(task2)
         
         let task3 = Tasks(title: "Egestas Cras", details: nil, subTasks: nil, created: Date(), isDone: true)
-        myTasks.append(task3)
+        myTasks.append(task3)*/
         
-        myTasks.removeAll()
-        return myTasks
+        //myTasks.removeAll()
+        print("Constants.allTasks: \(Constants.allTasks.count)")
+        return Constants.allTasks
     }
 }
