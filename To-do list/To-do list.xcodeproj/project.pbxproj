@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502EE6E420F7B06A00D0DF8F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6E320F7B06A00D0DF8F /* UIViewExtensions.swift */; };
+		502EE6E620F7B1B600D0DF8F /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6E520F7B1B600D0DF8F /* UIButtonExtensions.swift */; };
+		502EE6ED20F7BD4200D0DF8F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6EC20F7BD4200D0DF8F /* HomeView.swift */; };
+		502EE6EF20F7BDC100D0DF8F /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6EE20F7BDC100D0DF8F /* Tasks.swift */; };
+		502EE6F120F7C03600D0DF8F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6F020F7C03600D0DF8F /* HomeTableViewCell.swift */; };
+		502EE6F520F7C52600D0DF8F /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 502EE6F420F7C52600D0DF8F /* HomeTableViewCell.xib */; };
 		BFBBE5C220F6DA260012C4A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBE5C120F6DA260012C4A0 /* AppDelegate.swift */; };
-		BFBBE5C420F6DA260012C4A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBE5C320F6DA260012C4A0 /* ViewController.swift */; };
 		BFBBE5C720F6DA260012C4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBE5C520F6DA260012C4A0 /* Main.storyboard */; };
 		BFBBE5C920F6DA280012C4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBBE5C820F6DA280012C4A0 /* Assets.xcassets */; };
 		BFBBE5CC20F6DA280012C4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBE5CA20F6DA280012C4A0 /* LaunchScreen.storyboard */; };
@@ -35,9 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		502EE6E320F7B06A00D0DF8F /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		502EE6E520F7B1B600D0DF8F /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		502EE6EC20F7BD4200D0DF8F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		502EE6EE20F7BDC100D0DF8F /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		502EE6F020F7C03600D0DF8F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		502EE6F420F7C52600D0DF8F /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		BFBBE5BE20F6DA260012C4A0 /* To-do list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-do list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBE5C120F6DA260012C4A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFBBE5C320F6DA260012C4A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFBBE5C620F6DA260012C4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFBBE5C820F6DA280012C4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFBBE5CB20F6DA280012C4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +86,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		502EE6F620F7C99E00D0DF8F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				502EE6F720F7C9A900D0DF8F /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		502EE6F720F7C9A900D0DF8F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				502EE6F920F7C9C000D0DF8F /* Models */,
+				502EE6F820F7C9B700D0DF8F /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		502EE6F820F7C9B700D0DF8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				502EE6F020F7C03600D0DF8F /* HomeTableViewCell.swift */,
+				502EE6EC20F7BD4200D0DF8F /* HomeView.swift */,
+				502EE6F420F7C52600D0DF8F /* HomeTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		502EE6F920F7C9C000D0DF8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				502EE6EE20F7BDC100D0DF8F /* Tasks.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BFBBE5B520F6DA260012C4A0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				BFBBE5EF20F6E0B90012C4A0 /* Global */,
-				BFBBE5C320F6DA260012C4A0 /* ViewController.swift */,
 				BFBBE5F320F6E1050012C4A0 /* Resources */,
 				BFBBE5CD20F6DA280012C4A0 /* Info.plist */,
-				BFBBE5F420F6E1260012C4A0 /* Modules */,
+				502EE6F620F7C99E00D0DF8F /* Module */,
 			);
 			path = "To-do list";
 			sourceTree = "<group>";
@@ -138,7 +182,9 @@
 		BFBBE5F020F6E0C80012C4A0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				502EE6E520F7B1B600D0DF8F /* UIButtonExtensions.swift */,
 				BFBBE5F120F6E0EF0012C4A0 /* UITableView+Extension.swift */,
+				502EE6E320F7B06A00D0DF8F /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -151,53 +197,6 @@
 				BFBBE5C520F6DA260012C4A0 /* Main.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		BFBBE5F420F6E1260012C4A0 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				BFBBE5F620F6E1920012C4A0 /* Details */,
-				BFBBE5F520F6E14E0012C4A0 /* Home */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		BFBBE5F520F6E14E0012C4A0 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				BFBBE5F920F6E22A0012C4A0 /* Model */,
-				BFBBE5F820F6E2200012C4A0 /* View Model */,
-				BFBBE5F720F6E21B0012C4A0 /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		BFBBE5F620F6E1920012C4A0 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		BFBBE5F720F6E21B0012C4A0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		BFBBE5F820F6E2200012C4A0 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
-		BFBBE5F920F6E22A0012C4A0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +305,7 @@
 			files = (
 				BFBBE5CC20F6DA280012C4A0 /* LaunchScreen.storyboard in Resources */,
 				BFBBE5C920F6DA280012C4A0 /* Assets.xcassets in Resources */,
+				502EE6F520F7C52600D0DF8F /* HomeTableViewCell.xib in Resources */,
 				BFBBE5C720F6DA260012C4A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,8 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFBBE5C420F6DA260012C4A0 /* ViewController.swift in Sources */,
+				502EE6E620F7B1B600D0DF8F /* UIButtonExtensions.swift in Sources */,
+				502EE6ED20F7BD4200D0DF8F /* HomeView.swift in Sources */,
 				BFBBE5C220F6DA260012C4A0 /* AppDelegate.swift in Sources */,
+				502EE6EF20F7BDC100D0DF8F /* Tasks.swift in Sources */,
+				502EE6E420F7B06A00D0DF8F /* UIViewExtensions.swift in Sources */,
+				502EE6F120F7C03600D0DF8F /* HomeTableViewCell.swift in Sources */,
 				BFBBE5F220F6E0EF0012C4A0 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KE3BN75Y9;
 				INFOPLIST_FILE = "To-do list/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paranoidDev.To-do-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -528,7 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KE3BN75Y9;
 				INFOPLIST_FILE = "To-do list/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,7 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paranoidDev.To-do-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
