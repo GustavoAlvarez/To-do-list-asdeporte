@@ -10,10 +10,12 @@ import UIKit
 
 class HomeView: UIViewController {
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var emptyView: UIView!
     
-    lazy var tasksModel:[Tasks] = [Tasks]()
+    var tasks: [Task] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,22 +24,26 @@ class HomeView: UIViewController {
         
         self.tableView.register(HomeTableViewCell.register(), forCellReuseIdentifier: "HomeTableViewCell")
         self.tableView.estimatedRowHeight = 60
-        //self.tableView.rowHeight = UITableViewAutomaticDimension
-        
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        tasksModel = { () -> [Tasks] in
-            if (Tasks().getAllTasks().count == 0){
-                displayEmptyView()
-            }else{
-                hideEmptyView()
-            }
-            return Tasks().getAllTasks()
-        }()
-        
+        getTasks()
+        if (tasks.count > 0){
+            hideEmptyView()
+        }else{
+            displayEmptyView()
+        }
         self.tableView.reloadData()
+    }
+    
+    func getTasks(){
+        do {
+            tasks = try context.fetch(Task.fetchRequest())
+        }
+        catch {
+            print("Fetching Failed")
+        }
     }
     
     func displayEmptyView(){
@@ -49,7 +55,19 @@ class HomeView: UIViewController {
     
     @IBAction func newTask(_ sender: UIButton) {
         let vc:DetailsTableView = self.storyboard?.instantiateViewController(withIdentifier: "DetailsTableView") as! DetailsTableView
+        
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func updateTask(sender: UIButton){
+        print("updateTask: \(sender.tag)")
+        if (tasks[sender.tag].isDone){
+            tasks[sender.tag].isDone = false
+        }else{
+            tasks[sender.tag].isDone = true
+        }
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        self.tableView.reloadData()
     }
     
 }
@@ -61,7 +79,7 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.tasksModel.count
+        return self.tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,8 +90,9 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         
         let row = indexPath.row
         
-        cell.titleLabel.text = tasksModel[row].title
-        if (tasksModel[row].isDone){
+        cell.titleLabel.text = tasks[row].title
+        print("is Donde: \(tasks[row].isDone)")
+        if (tasks[row].isDone){
             cell.statusButton.setImage(UIImage(named: "check"), for: .normal)
             cell.statusButton.setImage(UIImage(named: "uncheck"), for: .highlighted)
         }else{
@@ -81,16 +100,18 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
             cell.statusButton.setImage(UIImage(named: "check"), for: .highlighted)
         }
         
+        cell.statusButton.tag = indexPath.row
+        cell.statusButton.addTarget(self, action: #selector(self.updateTask), for: .touchUpInside)
+        
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let detail = DetailPostViewController()
-        //detail.getValue = self.postViewModel.postPressed(at: indexPath)
-        //self.pushNavigation(detail)
         let vc:DetailsTableView = self.storyboard?.instantiateViewController(withIdentifier: "DetailsTableView") as! DetailsTableView
         vc.isEditingTask = true
+        vc.tasks = tasks
+        vc.indexPath = indexPath.row
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

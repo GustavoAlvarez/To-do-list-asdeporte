@@ -10,7 +10,6 @@
 		502EE6E420F7B06A00D0DF8F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6E320F7B06A00D0DF8F /* UIViewExtensions.swift */; };
 		502EE6E620F7B1B600D0DF8F /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6E520F7B1B600D0DF8F /* UIButtonExtensions.swift */; };
 		502EE6ED20F7BD4200D0DF8F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6EC20F7BD4200D0DF8F /* HomeView.swift */; };
-		502EE6EF20F7BDC100D0DF8F /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6EE20F7BDC100D0DF8F /* Tasks.swift */; };
 		502EE6F120F7C03600D0DF8F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6F020F7C03600D0DF8F /* HomeTableViewCell.swift */; };
 		502EE6F520F7C52600D0DF8F /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 502EE6F420F7C52600D0DF8F /* HomeTableViewCell.xib */; };
 		502EE6FD20F7FB0000D0DF8F /* DetailsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE6FC20F7FB0000D0DF8F /* DetailsTableView.swift */; };
@@ -18,10 +17,10 @@
 		BFBBE5C220F6DA260012C4A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBE5C120F6DA260012C4A0 /* AppDelegate.swift */; };
 		BFBBE5C720F6DA260012C4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBE5C520F6DA260012C4A0 /* Main.storyboard */; };
 		BFBBE5C920F6DA280012C4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBBE5C820F6DA280012C4A0 /* Assets.xcassets */; };
-		BFBBE5CC20F6DA280012C4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBE5CA20F6DA280012C4A0 /* LaunchScreen.storyboard */; };
 		BFBBE5D720F6DA280012C4A0 /* To_do_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBE5D620F6DA280012C4A0 /* To_do_listTests.swift */; };
 		BFBBE5E220F6DA280012C4A0 /* To_do_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBE5E120F6DA280012C4A0 /* To_do_listUITests.swift */; };
 		BFBBE5F220F6E0EF0012C4A0 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBE5F120F6E0EF0012C4A0 /* UITableView+Extension.swift */; };
+		BFBBE5FC20F986270012C4A0 /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFBBE5FA20F986270012C4A0 /* Task.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		502EE6E320F7B06A00D0DF8F /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		502EE6E520F7B1B600D0DF8F /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		502EE6EC20F7BD4200D0DF8F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		502EE6EE20F7BDC100D0DF8F /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		502EE6F020F7C03600D0DF8F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		502EE6F420F7C52600D0DF8F /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		502EE6FC20F7FB0000D0DF8F /* DetailsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableView.swift; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		BFBBE5C120F6DA260012C4A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFBBE5C620F6DA260012C4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFBBE5C820F6DA280012C4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BFBBE5CB20F6DA280012C4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFBBE5CD20F6DA280012C4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFBBE5D220F6DA280012C4A0 /* To-do listTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To-do listTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBE5D620F6DA280012C4A0 /* To_do_listTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_do_listTests.swift; sourceTree = "<group>"; };
@@ -63,6 +60,7 @@
 		BFBBE5E120F6DA280012C4A0 /* To_do_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_do_listUITests.swift; sourceTree = "<group>"; };
 		BFBBE5E320F6DA280012C4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFBBE5F120F6E0EF0012C4A0 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		BFBBE5FB20F986270012C4A0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +119,7 @@
 		502EE6F920F7C9C000D0DF8F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				502EE6EE20F7BDC100D0DF8F /* Tasks.swift */,
+				BFBBE5FA20F986270012C4A0 /* Task.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				BFBBE5C820F6DA280012C4A0 /* Assets.xcassets */,
-				BFBBE5CA20F6DA280012C4A0 /* LaunchScreen.storyboard */,
 				BFBBE5C520F6DA260012C4A0 /* Main.storyboard */,
 			);
 			path = Resources;
@@ -325,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFBBE5CC20F6DA280012C4A0 /* LaunchScreen.storyboard in Resources */,
 				BFBBE5C920F6DA280012C4A0 /* Assets.xcassets in Resources */,
 				502EE6F520F7C52600D0DF8F /* HomeTableViewCell.xib in Resources */,
 				BFBBE5C720F6DA260012C4A0 /* Main.storyboard in Resources */,
@@ -357,9 +353,9 @@
 				502EE6ED20F7BD4200D0DF8F /* HomeView.swift in Sources */,
 				502EE6FD20F7FB0000D0DF8F /* DetailsTableView.swift in Sources */,
 				BFBBE5C220F6DA260012C4A0 /* AppDelegate.swift in Sources */,
-				502EE6EF20F7BDC100D0DF8F /* Tasks.swift in Sources */,
 				502EE6E420F7B06A00D0DF8F /* UIViewExtensions.swift in Sources */,
 				502EE6F120F7C03600D0DF8F /* HomeTableViewCell.swift in Sources */,
+				BFBBE5FC20F986270012C4A0 /* Task.xcdatamodeld in Sources */,
 				BFBBE5F220F6E0EF0012C4A0 /* UITableView+Extension.swift in Sources */,
 				502EE70120F8052200D0DF8F /* Constants.swift in Sources */,
 			);
@@ -403,14 +399,6 @@
 				BFBBE5C620F6DA260012C4A0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BFBBE5CA20F6DA280012C4A0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFBBE5CB20F6DA280012C4A0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -534,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KE3BN75Y9;
 				INFOPLIST_FILE = "To-do list/Info.plist";
@@ -542,7 +531,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.paranoidDev.To-do-list";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paranoidDev.Todo-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -553,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KE3BN75Y9;
 				INFOPLIST_FILE = "To-do list/Info.plist";
@@ -561,7 +551,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.paranoidDev.To-do-list";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paranoidDev.Todo-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -690,6 +680,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFBBE5FA20F986270012C4A0 /* Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFBBE5FB20F986270012C4A0 /* Model.xcdatamodel */,
+			);
+			currentVersion = BFBBE5FB20F986270012C4A0 /* Model.xcdatamodel */;
+			path = Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BFBBE5B620F6DA260012C4A0 /* Project object */;
 }

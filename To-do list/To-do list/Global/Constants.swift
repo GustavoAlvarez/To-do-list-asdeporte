@@ -10,6 +10,5 @@ import Foundation
 
 struct Constants {
     
-    static var allTasks = [Tasks]()
     
 }

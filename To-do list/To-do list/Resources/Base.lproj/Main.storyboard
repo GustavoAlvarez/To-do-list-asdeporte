@@ -50,7 +50,7 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lj2-Xr-LqR">
                                 <rect key="frame" x="0.0" y="88" width="375" height="630"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="make_a_robot" translatesAutoresizingMaskIntoConstraints="NO" id="SIn-kq-C1v">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="take_a_beer" translatesAutoresizingMaskIntoConstraints="NO" id="SIn-kq-C1v">
                                         <rect key="frame" x="15" y="60" width="345" height="300"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="NbB-RO-L5l"/>
@@ -62,10 +62,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AET-tf-RdV">
-                                        <rect key="frame" x="15" y="403" width="345" height="38.333333333333314"/>
-                                        <string key="text">No tienes ninguna tarea.
-Intenta crear un robot.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tienes ninguna tarea." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AET-tf-RdV">
+                                        <rect key="frame" x="15" y="403" width="345" height="19.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -176,37 +174,6 @@ Intenta crear un robot.</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="55" id="slh-xm-B0D">
-                                        <rect key="frame" x="0.0" y="115" width="375" height="55"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="slh-xm-B0D" id="hTs-0t-cvw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date" translatesAutoresizingMaskIntoConstraints="NO" id="Udf-6B-IOC">
-                                                    <rect key="frame" x="15" y="10" width="30" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="Pur-mu-cdV"/>
-                                                        <constraint firstAttribute="height" constant="35" id="Z1C-ce-Bct"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Agrega una fecha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fT1-ig-0kE">
-                                                    <rect key="frame" x="60" y="10" width="300" height="35"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Udf-6B-IOC" firstAttribute="leading" secondItem="hTs-0t-cvw" secondAttribute="leading" constant="15" id="AW5-1i-SSE"/>
-                                                <constraint firstAttribute="bottom" secondItem="fT1-ig-0kE" secondAttribute="bottom" constant="10" id="IjH-Y0-nIg"/>
-                                                <constraint firstItem="Udf-6B-IOC" firstAttribute="top" secondItem="hTs-0t-cvw" secondAttribute="top" constant="10" id="cSV-uU-oml"/>
-                                                <constraint firstItem="fT1-ig-0kE" firstAttribute="leading" secondItem="Udf-6B-IOC" secondAttribute="trailing" constant="15" id="kWM-e8-fu5"/>
-                                                <constraint firstAttribute="trailing" secondItem="fT1-ig-0kE" secondAttribute="trailing" constant="15" id="onP-fV-CMH"/>
-                                                <constraint firstItem="fT1-ig-0kE" firstAttribute="top" secondItem="hTs-0t-cvw" secondAttribute="top" constant="10" id="xNP-q0-EXK"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -242,9 +209,8 @@ Intenta crear un robot.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="date" width="48" height="48"/>
         <image name="details" width="32" height="32"/>
-        <image name="make_a_robot" width="682" height="465"/>
+        <image name="take_a_beer" width="527" height="449"/>
     </resources>
     <color key="tintColor" red="0.42352941179999998" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
