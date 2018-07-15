@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtJ-9G-HsZ">
-                                <rect key="frame" x="10" y="718" width="355" height="50"/>
+                                <rect key="frame" x="10" y="713" width="355" height="50"/>
                                 <color key="backgroundColor" red="0.42352941179999998" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9uV-6Q-oki"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DcA-e8-eJj">
-                                <rect key="frame" x="0.0" y="88" width="375" height="630"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="625"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -48,9 +48,9 @@
                                 </connections>
                             </tableView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lj2-Xr-LqR">
-                                <rect key="frame" x="0.0" y="88" width="375" height="630"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="625"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="take_a_beer" translatesAutoresizingMaskIntoConstraints="NO" id="SIn-kq-C1v">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="make_a_robot" translatesAutoresizingMaskIntoConstraints="NO" id="SIn-kq-C1v">
                                         <rect key="frame" x="15" y="60" width="345" height="300"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="NbB-RO-L5l"/>
@@ -62,8 +62,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tienes ninguna tarea." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AET-tf-RdV">
-                                        <rect key="frame" x="15" y="403" width="345" height="19.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AET-tf-RdV">
+                                        <rect key="frame" x="15" y="403" width="345" height="57.333333333333314"/>
+                                        <string key="text">No tienes ninguna tarea.
+Intenta crear un robot.
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -96,7 +99,7 @@
                             <constraint firstItem="Lj2-Xr-LqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dgc-RV-4nY"/>
                             <constraint firstItem="DcA-e8-eJj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pOh-9a-iYz"/>
                             <constraint firstItem="Lj2-Xr-LqR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ptd-BN-Qat"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AtJ-9G-HsZ" secondAttribute="bottom" constant="10" id="tWA-pe-bJ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AtJ-9G-HsZ" secondAttribute="bottom" constant="15" id="tWA-pe-bJ1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -210,7 +213,7 @@
     </scenes>
     <resources>
         <image name="details" width="32" height="32"/>
-        <image name="take_a_beer" width="527" height="449"/>
+        <image name="make_a_robot" width="682" height="465"/>
     </resources>
     <color key="tintColor" red="0.42352941179999998" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

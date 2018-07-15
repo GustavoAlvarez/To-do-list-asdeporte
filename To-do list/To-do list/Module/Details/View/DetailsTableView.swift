@@ -29,6 +29,8 @@ class DetailsTableView: UITableViewController {
             self.navigationItem.rightBarButtonItem?.tintColor = UIColor(red: 196.0/255.0, green: 196.0/255, blue: 196.0/255, alpha: 1.0)
             
             fillTask()
+        }else{
+            titleTask.becomeFirstResponder()
         }
     }
     

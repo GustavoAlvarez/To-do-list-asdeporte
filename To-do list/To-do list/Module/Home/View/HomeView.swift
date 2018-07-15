@@ -90,12 +90,16 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         
         let row = indexPath.row
         
-        cell.titleLabel.text = tasks[row].title
-        print("is Donde: \(tasks[row].isDone)")
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: tasks[row].title!)
+        
         if (tasks[row].isDone){
+            
+            attributeString.addAttribute(.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+            cell.titleLabel.attributedText = attributeString
             cell.statusButton.setImage(UIImage(named: "check"), for: .normal)
             cell.statusButton.setImage(UIImage(named: "uncheck"), for: .highlighted)
         }else{
+            cell.titleLabel.attributedText = attributeString
             cell.statusButton.setImage(UIImage(named: "uncheck"), for: .normal)
             cell.statusButton.setImage(UIImage(named: "check"), for: .highlighted)
         }
